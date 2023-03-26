@@ -68,7 +68,7 @@ export const ChatMessage: FC<Props> = ({ message, messageIndex, lightMode, onEdi
 			<div className='text-base gap-4 md:gap-6 md:max-w-2xl lg:max-w-2xl xl:max-w-3xl p-4 md:py-6 flex lg:px-0 m-auto relative'>
 				<div className='font-bold min-w-[60px]'>{message.role === "assistant" ? t("Turing") : t("Canos")}:</div>
 
-				<div className='prose-invert dark:prose-invert mt-[-2px] w-full'>
+				<div className='prose-invert dark:prose-invert w-full'>
 					{message.role === "user" ? (
 						<div className='flex w-full'>
 							{isEditing ? (
